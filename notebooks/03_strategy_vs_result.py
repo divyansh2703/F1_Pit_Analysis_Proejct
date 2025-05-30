@@ -67,3 +67,6 @@ plt.show()
 
 # Save the final merged DataFrame to a CSV
 combined_df.to_csv("../data/final_pit_strategy_data.csv", index=False)
+
+print(combined_df.columns)
+
