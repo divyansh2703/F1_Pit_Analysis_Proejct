@@ -64,3 +64,6 @@ plt.xlabel('Avg Pit Duration (s)')
 plt.ylabel('Finishing Position (1 = best)')
 plt.gca().invert_yaxis()
 plt.show()
+
+# Save the final merged DataFrame to a CSV
+combined_df.to_csv("../data/final_pit_strategy_data.csv", index=False)
