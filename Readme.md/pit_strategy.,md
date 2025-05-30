@@ -1,0 +1,39 @@
+Formula 1 Pit Stop Strategy Analysis
+
+
+This project analyzes pit stop strategies in Formula 1 races, focusing on how the number and timing of pit stops influence race results. Using real race data from the 2021 British Grand Prix, I’ve combined Python, SQL, and Power BI to uncover meaningful insights.
+
+Project Goals / Objectives
+- Analyze pit stop durations per driver
+- Compare number of stops to final race position
+- Visualize the effect of strategy on performance
+- Practice ETL and dashboarding with SQL and Power BI
+
+Data Collection
+Data was collected using the Ergast Developer API. JSON responses were parsed using Python and saved to CSV files for analysis.
+
+Data Cleaning
+Issues such as NaN values and time format conversion were addressed. For example, pit stop durations in 'mm:ss.sss' format were converted into seconds.
+ 
+SQL Integration
+Processed data was uploaded into a MySQL database called 'f1_pit_strategy'. Structured queries were used to extract insights.
+Example:
+SELECT AVG(avg_pit_duration), pit_stops FROM pit_strategy GROUP BY pit_stops;
+ 
+Key Insights
+- 2-stop strategies generally resulted in better final positions.
+- Pit stop efficiency alone does not guarantee success.
+- Teams use varying strategies effectively.
+- Losing time during pit stop might also cost you race position.
+Learnings & Challenges
+Learned how to handle JSON API data, clean time-based metrics, and use Power BI for business storytelling. Faced challenges with NaN conversions and formatting SQL inserts.
+
+
+Final Output & Deliverables
+- Python scripts
+- Cleaned datasets
+- MySQL DB schema
+- Power BI dashboard
+- This report
+GitHub & Project Links
+GitHub Repo: https://github.com/divyansh2703/F1_Pit_Analysis_Proejct.git
